@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>LiveTech</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo"><span class="first_logo_text">Live</span>Tech</div>
+        ‌<a class="nav-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-bar-link">
+          <ul>
+            <li><a id="btn_home" href="index.html">Home</a></li>
+            <li id="jone">
+              <a href="techEnv.html">Tech Env</a
+              ><i id="itwo" class="fa fa-caret-down" aria-hidden="true"></i>
+              <div class="dropdown_menu">
+                <ul>
+                  <li><a href="#" id="web">Web Dev</a></li>
+                  <li><a href="#">Software Architecure</a></li>
+                  <li><a href="#">Universe</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Developer News</a></li>
+            <li><a href="#">Learing Area</a></li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="home">
+        <div class="section1">
+          <img src="images/img1.jpg" alt="" />
+          <div class="one_text">
+            <h2>Effect Of Invention</h2>
+          </div>
+        </div>
+
+        <div class="section2">
+          <div class="one_status">
+            <div class="one_status_one">
+              <h3>You should learn these language</h3>
+              <div class="line"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="lighting1"></div>
+          </div>
+          <div class="one_list">
+            <div class="lighting2"></div>
+            <div class="one_status_lists">
+              <h4>Developing And Engineering Languages</h4>
+              <ul>
+                <li><a href="#">C</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Php</a></li>
+                <li><a href="#">SQL</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section3">
+          <div class="search_div">
+            <h2>Most Popular of IT'hands</h2>
+            <div class="search_border">
+              <input
+                type="text"
+                id="search_input"
+                name=""
+                value=""
+                placeholder="Search Languages"
+              />
+              <span><i class="fa fa-search" aria-hidden="true"></i></span>
+              <button type="" onclick="search()" name="button">Search</button>
+            </div>
+            <div class="result_box">
+              <h3>Languages</h3>
+              <div class="search_result">
+                <h4 id="js"></h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_section">
+          <div class="footer_mode">
+            <div class="first_footer">
+              <h4 style="color: red">
+                Live<span style="color: blue; font-size: 2.3rem">Tech</span>
+              </h4>
+              <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+              <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+              <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+              <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+            </div>
+            <div class="second_footer">
+              <input type="text" name="" value="" placeholder="Support" />
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+            <div class="third_footer">
+              <input type="text" name="" value="" placeholder="Support" />
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+            <div class="forth_footer">
+              <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+              <span>Stay up to date on the latest from Live It</span>
+              <input
+                type="text"
+                name=""
+                value=""
+                placeholder="Enter your e-mail address"
+              />
+              <button type="button" name="button">Sign Up</button>
+            </div>
+          </div>
+          <div class="copy_right">
+            <p>2022 @ copy right by Live It</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script>
+
+      let nav = document.querySelector('.header');
+
+      let scrollPrevous = window.pageYOffset;
+      window.onscroll = function(){
+        let scrollCurrent = window.pageYOffset;
+        if(scrollPrevous > scrollCurrent){
+          nav.style.top = "0px";
+        }else{
+          nav.style.top = "-90px";
+        }
+        scrollPrevous = scrollCurrent;
+      }
+
+    </script>
+
+    <script>
+      // const btnToggle = document.getElementsByClassName("nav-button")[0];
+      // const navbar = document.getElementsByClassName("nav-bar-link")[0];
+
+      // btnToggle.addEventListener("click", () => {
+      //   navbar.classList.toggle("active");
+      // });
+
+      // const str = `Javascript \n \n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
+
+      // // search_input.toString();
+      // const js = document.getElementById("js");
+
+      // const cStr =
+      //   "C Languages is the main language of Languages.This language can be dived to machine language.So That have many complex algorithum and creative logic";
+      // const jsStr =
+      //   "Javascript is the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
+      // function search() {
+      //   const search_input = document.getElementById("search_input").value;
+      //   search_input.toString();
+      //   // console.log(search_input);
+      //   if (search_input === "c") {
+      //     js.innerHTML = "C" + "</br>" + cStr;
+      //   } else if (search_input === "javascript") {
+      //     js.innerHTML = "Javascript" + "</br>" + jsStr;
+      //   } else {
+      //     js.innerHTML = "you are wrong";
+      //     alert("your are something wrong");
+      //   }
+      // }
+
+      // const home = document.getElementById("home");
+
+      // const web = document.getElementById("web");
+
+      // const techNew_web = document.getElementById("techNew_web");
+      // techNew_web.style.display ="none";
+
+      // const one = document.getElementById('jone');
+      // one.addEventListener('click', function() {
+      //   home.style.display = "none";
+      //   techNew_web.style.display ="block";
+      // })
+
+      // const two = document.getElementById('btn_home');
+      // two.addEventListener('click', function() {
+      //   home.style.display = "block";
+      //   techNew_web.style.display ="none";
+      // })
+    </script>
+  </body>
+</html>
